@@ -1,11 +1,11 @@
-About r-cctensor
-================
+About r-cctensor-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cctensor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rikenbit/ccTensor
 
 Package license: Artistic-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cctensor-feedstock/blob/main/LICENSE.txt)
 
 Summary: CUR/CX decomposition factorizes a matrix into two factor matrices and Multidimensional CX Decomposition factorizes a tensor into a core tensor and some factor matrices. See the reference section of GitHub README.md <https://github.com/rikenbit/ccTensor>, for details of the methods.
 
