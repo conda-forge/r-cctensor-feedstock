@@ -1,4 +1,4 @@
-{% set version = '1.0.2' %}
+{% set version = "1.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ccTensor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ccTensor/ccTensor_{{ version }}.tar.gz
-  sha256: cae2d0200507b892f2637338f98677d66a66828cc81d7e3f9b5d043b4bc72ce4
+  sha256: 76617f8118b002b56265da397b50161a50f2703539c85de6020f30ad76c162fd
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -43,10 +43,7 @@ test:
 about:
   home: https://github.com/rikenbit/ccTensor
   license: Artistic-2.0
-  summary: CUR/CX decomposition factorizes a matrix into two factor matrices and Multidimensional
-    CX Decomposition factorizes a tensor into a core tensor and some factor matrices.
-    See the reference section of GitHub README.md <https://github.com/rikenbit/ccTensor>,
-    for details of the methods.
+  summary: CUR/CX decomposition factorizes a matrix into two factor matrices and Multidimensional CX Decomposition factorizes a tensor into a core tensor and some factor matrices. See the reference section of GitHub README.md <https://github.com/rikenbit/ccTensor>, for details of the methods.
   license_family: OTHER
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0'
