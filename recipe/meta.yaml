@@ -12,7 +12,7 @@ source:
   sha256: 76617f8118b002b56265da397b50161a50f2703539c85de6020f30ad76c162fd
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -23,13 +23,13 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base >=4.1
+    - r-base
     - r-mass
     - r-fields
     - r-igraph
     - r-rtensor
   run:
-    - r-base >=4.1
+    - r-base
     - r-mass
     - r-fields
     - r-igraph
